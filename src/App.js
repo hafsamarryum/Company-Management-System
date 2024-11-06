@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
+import LoginPg from './components/LoginPg';
+import {Route , Routes} from 'react-router-dom';
+import Register from './components/Register';
+import EmployeeDashboard from './components/EmployeeDashboard';
+import Profile from './components/Profile';
+import ProjectOverview from './components/ProjectOverview';
+import TaskManagement from './components/TaskManagement';
+import Attendance from './components/Attendance';
+import Feedback from './components/Feedback';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+      <Route path="/" element={<LoginPg/>} />
+      <Route path="/login" element={<LoginPg/>} />
+      <Route path="/register" element={<Register/>}/>
+      <Route path="/employeeDashboard" element={<EmployeeDashboard/>} />
+      <Route path="/profile" element={<Profile/>} />
+      <Route path="/projectOverview" element={<ProjectOverview/>} />
+      <Route path="/taskManagement" element={<TaskManagement/>} />
+      <Route path="/attendance" element={<Attendance/>} />
+      <Route path="/feedback" element={<Feedback/>} />
+      </Routes>
+      
     </div>
   );
 }

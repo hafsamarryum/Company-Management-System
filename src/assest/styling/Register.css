@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.RegPage{
+  height: 100vh;
+  width:  100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:url('../images/bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h{
+  font-size: 1.7rem;
+  font-weight: 650;
+}
+form{
+  width: 100%;
+}
+.RegForm{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(1 ,32, 93, 0.6);
+  color: white;
+  padding: 0.3rem 1.1rem;
+}
+.inputfield{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.2rem;
+  margin: 1rem 0px 1rem 0px;
+}
+input{
+  height: 38px;
+  width: 100%;
+  padding: 0.8rem;
+}
+button{
+  height: 38px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(13, 110, 78);
+  border: none;
+  font-size: 1.1rem;
+  color: white;
+}
+.checkbox{
+  width: 100%;
+  display: flex;
+  align-items: Start;
+  margin: 1rem 0px;
+  gap: 0.2rem;
+}
+.checkbox input{
+  width: 15px;
+  height: 15px;
+}
+.checkbox label{
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+}
